@@ -1,0 +1,896 @@
+{
+    "menu_group_map": {
+        "21573": {
+            "id": 21573,
+            "name": "New!",
+            "sort_order": 0
+        },
+        "21566": {
+            "id": 21566,
+            "name": "Starters",
+            "sort_order": 1
+        },
+        "21569": {
+            "id": 21569,
+            "name": "Signature Plates",
+            "sort_order": 2
+        },
+        "21572": {
+            "id": 21572,
+            "name": "Bowls",
+            "sort_order": 3
+        },
+        "33596": {
+            "id": 33596,
+            "name": "Salads",
+            "sort_order": 4
+        },
+        "21574": {
+            "id": 21574,
+            "name": "Pitas",
+            "sort_order": 5
+        },
+        "21565": {
+            "id": 21565,
+            "name": "Sides",
+            "sort_order": 6
+        },
+        "34486": {
+            "id": 34486,
+            "name": "Drinks",
+            "sort_order": 8
+        },
+        "21575": {
+            "id": 21575,
+            "name": "Desserts",
+            "sort_order": 11
+        },
+        "21570": {
+            "id": 21570,
+            "name": "A La Carte",
+            "sort_order": 13
+        }
+    },
+    "menu_item_map": {
+        "148142": {
+            "id": 148142,
+            "name": "Chicken Kabob & Koobideh Kabob Plate",
+            "description": "Thinly cut pieces of savory chicken and our seasoned minced beef. Plate includes basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023040308PM46.JPEG",
+            "ranking": 19,
+            "price": 21.49,
+            "calorie": null
+        },
+        "148143": {
+            "id": 148143,
+            "name": "Bistro Beef Kabob Plate",
+            "description": "Marinated pieces of tender beef skewered with onion and bell pepper. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023040308PM22.JPEG",
+            "ranking": 24,
+            "price": 19.49,
+            "calorie": 790
+        },
+        "148144": {
+            "id": 148144,
+            "name": "Stuffed Grape Leaves",
+            "description": "Grape leaves stuffed with rice, onion and spices. Served with Garlic Feta Sauce.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023053010PM12.JPEG",
+            "ranking": 30,
+            "price": 5.29,
+            "calorie": 340
+        },
+        "148145": {
+            "id": 148145,
+            "name": "Falafel",
+            "description": "Handcrafted falafel served with tahini sauce.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023040308PM44.JPEG",
+            "ranking": 34,
+            "price": 7.49,
+            "calorie": 500
+        },
+        "148147": {
+            "id": 148147,
+            "name": "Koobideh Kabob Plate",
+            "description": "Seasoned minced beef kabob made with all-natural ground beef and seasonings. Plate includes basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-688fc94d-5fff-4c5a-bd70-917dc78da8c7.JPEG",
+            "ranking": 27,
+            "price": 16.99,
+            "calorie": null
+        },
+        "148148": {
+            "id": 148148,
+            "name": "Flat Cut Chicken Kabob Plate",
+            "description": "Thinly cut pieces of savory chicken. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023071204PM29.JPEG",
+            "ranking": 5,
+            "price": 17.89,
+            "calorie": null
+        },
+        "148149": {
+            "id": 148149,
+            "name": "Organic Original Hummus",
+            "description": "A perfect blend of chick peas, tahini, lemon and spices Enjoy with sliced veggies or pita bread.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023053008PM50.JPEG",
+            "ranking": 16,
+            "price": 6.49,
+            "calorie": null
+        },
+        "148150": {
+            "id": 148150,
+            "name": "Spicy Harissa Hummus",
+            "description": "Harissa (peppers, jalapeno, garlic, cilantro and spices) served over organic hummus. Served with your choice of veggies or pita ",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM42.JPEG",
+            "ranking": 70,
+            "price": 7.29,
+            "calorie": null
+        },
+        "148151": {
+            "id": 148151,
+            "name": "House Salad",
+            "description": "Lettuce Medley, tomato, cucumber, house vinaigrette. Pita bread. Add on chilled chopped chicken, gyro, or falafel",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023041104PM40.JPEG",
+            "ranking": 97,
+            "price": 8.99,
+            "calorie": 176
+        },
+        "148152": {
+            "id": 148152,
+            "name": "Apple Walnut Salad",
+            "description": "Sliced apple, crumbled gorgonzola, candied walnuts, dried cranberries, lettuce medley, pomegranate vinaigrette. Pita bread (+110 Cals). Add on chilled chopped chicken (+130 Cals), falafel (+250 Cals), or gyro (+350 Cals)",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023030705AM10.JPEG",
+            "ranking": 23,
+            "price": 12.29,
+            "calorie": null
+        },
+        "148153": {
+            "id": 148153,
+            "name": "Gyro Meat Plate",
+            "description": "Shaved gyro meat served with basmati rice, pita bread, tzatziki, and choice of house salad (+85 Cals), Greek cabbage (+160 Cals), original hummus (+330 Cals), or spicy harissa hummus +$1 (+440 Cals). Gyro Meat is a blend of beef, lamb and traditional Near Eastern spices.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023053009PM05.JPEG",
+            "ranking": 11,
+            "price": 16.79,
+            "calorie": 1011
+        },
+        "148155": {
+            "id": 148155,
+            "name": "Grilled Salmon Plate",
+            "description": "Kosher salmon filet simply seasoned and grilled. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023071204PM25.JPEG",
+            "ranking": 12,
+            "price": 19.49,
+            "calorie": 784
+        },
+        "148156": {
+            "id": 148156,
+            "name": "Chicken Kabob & Gyro Meat Plate",
+            "description": "Succulent pieces of boneless chicken tenders and our shaved gyro meat. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1. Gyro Meat is a blend of beef, lamb and traditional Near Eastern spices.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023041001PM02.JPEG",
+            "ranking": 13,
+            "price": 20.99,
+            "calorie": 1167
+        },
+        "148157": {
+            "id": 148157,
+            "name": "Fries",
+            "description": "Serves 2",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023011102PM20.JPEG",
+            "ranking": 54,
+            "price": 5.49,
+            "calorie": 630
+        },
+        "148158": {
+            "id": 148158,
+            "name": "Mediterranean Melt",
+            "description": "Gyro meat, diced tomato, cheese, tzatziki, multigrain lavash served with choice of side house salad (+85 cals) or fries (+420 cals)",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM47.JPEG",
+            "ranking": 60,
+            "price": 13.99,
+            "calorie": 420
+        },
+        "148159": {
+            "id": 148159,
+            "name": "Mediterranean Salad",
+            "description": "Pearled couscous, diced tomato, chopped cucumber, red onion, mint, parsley, feta cheese, house vinaigrette, lettuce medley. (420 Cals). Pita bread (+110 Cals). Add on chilled chopped chicken (+130 Cals), gyro (+350 Cals), or falafel (+250 Cals)",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023071204PM37.JPEG",
+            "ranking": 20,
+            "price": 12.49,
+            "calorie": 426
+        },
+        "148160": {
+            "id": 148160,
+            "name": "Spicy Feta",
+            "description": "A blend of crumbled feta cheese, tomatoes, and spices. Enjoy with sliced veggies or pita bread.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023012004AM42.PNG",
+            "ranking": 36,
+            "price": 6.99,
+            "calorie": null
+        },
+        "148180": {
+            "id": 148180,
+            "name": "Baklava",
+            "description": "Sweet, melt-in-your-mouth mini handmade Baklava just for you!",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023021001AM21.JPEG",
+            "ranking": 22,
+            "price": 2.29,
+            "calorie": 110
+        },
+        "148181": {
+            "id": 148181,
+            "name": "Koobideh Kabob Pita",
+            "description": "Kale medley, diced tomato, seasoned minced beef and sauce wrapped in pita bread. Served with a side house salad or fries.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023040405PM40.JPEG",
+            "ranking": 74,
+            "price": 13.49,
+            "calorie": 640
+        },
+        "148183": {
+            "id": 148183,
+            "name": "Side of Fries",
+            "description": "Serves 2",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM39.JPEG",
+            "ranking": 17,
+            "price": 2.99,
+            "calorie": null
+        },
+        "148185": {
+            "id": 148185,
+            "name": "Lunatic Sampler",
+            "description": "Falafel, stuffed grape leaves, couscous medley, organic hummus (original or spicy harissa), pita bread.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023071204PM32.JPEG",
+            "ranking": 44,
+            "price": 13.99,
+            "calorie": null
+        },
+        "148360": {
+            "id": 148360,
+            "name": "Side of Greek Cabbage Salad",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-f4f382a8-bfb5-4bf2-9252-c3525ec92d7f.JPEG",
+            "ranking": 104,
+            "price": 3.99,
+            "calorie": 160
+        },
+        "148361": {
+            "id": 148361,
+            "name": "Side Chickpea Salad",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023041104PM43.JPEG",
+            "ranking": 85,
+            "price": 3.99,
+            "calorie": null
+        },
+        "148362": {
+            "id": 148362,
+            "name": "Pellegrino Cherry",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM33.JPEG",
+            "ranking": 106,
+            "price": 3.49,
+            "calorie": null
+        },
+        "148364": {
+            "id": 148364,
+            "name": "Falafel Pita",
+            "description": "Greek cabbage, shredded kale, diced tomato, falafel and sauce wrapped in pita bread. Served with a side house salad or fries.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023013109AM31.JPEG",
+            "ranking": 50,
+            "price": 12.99,
+            "calorie": 533
+        },
+        "148365": {
+            "id": 148365,
+            "name": "Chocolate Chunk Cookie",
+            "description": "A brown butter, caramelized, chewy-crisped-edged chocolate chip wonder to shower your taste buds with amazement. Free from GMOs, additives, and artificial colors. Made with pure cane sugar and cage-free eggs.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-580775a7-cc87-4a53-a38e-eaa8b2167e81.JPEG",
+            "ranking": 56,
+            "price": 3.49,
+            "calorie": 380
+        },
+        "148367": {
+            "id": 148367,
+            "name": "Chicken Pita",
+            "description": "Greek cabbage, shredded kale, diced tomato, grilled chicken and sauce wrapped in pita bread. Served with a side house salad or fries.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023013109AM16.JPEG",
+            "ranking": 18,
+            "price": 12.99,
+            "calorie": 390
+        },
+        "148368": {
+            "id": 148368,
+            "name": "Luna Vida Vegetarian Bowl",
+            "description": "Housemade falafel served on top of a bed of lettuce with lemon vinaigrette, Greek cabbage, feta, chickpea salad, cucumber and tomato, drizzled with vegan tahini sauce.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM23.JPEG",
+            "ranking": 55,
+            "price": 12.49,
+            "calorie": null
+        },
+        "148372": {
+            "id": 148372,
+            "name": "Dip Trio",
+            "description": "Spicy feta, organic original hummus and spicy harissa hummus served with veggies and pita bread.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023071204PM34.JPEG",
+            "ranking": 35,
+            "price": 9.49,
+            "calorie": 760
+        },
+        "148373": {
+            "id": 148373,
+            "name": "Luna Vida Keto Bowl",
+            "description": "Grilled sustainable Salmon served on top of a bed of lettuce with lemon vinaigrette, spicy feta, Greek cabbage, cucumber, tomato, and feta drizzled with housemade tzatziki.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM50.JPEG",
+            "ranking": 32,
+            "price": 12.99,
+            "calorie": null
+        },
+        "148374": {
+            "id": 148374,
+            "name": "Bottled Spring Water",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM32.JPEG",
+            "ranking": 107,
+            "price": 2.99,
+            "calorie": null
+        },
+        "148375": {
+            "id": 148375,
+            "name": "Side of Pita Bread",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023052409PM40.JPEG",
+            "ranking": 8,
+            "price": 1.49,
+            "calorie": 240
+        },
+        "148376": {
+            "id": 148376,
+            "name": "Side Of Carrots",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023013109AM15.JPEG",
+            "ranking": 37,
+            "price": 1.0,
+            "calorie": null
+        },
+        "148377": {
+            "id": 148377,
+            "name": "Luna Vida Vegan Bowl",
+            "description": "Housemade falafel served on top of a bed of lettuce with lemon vinaigrette, Greek cabbage, chickpea salad, cucumber and tomato, drizzled with vegan tahini sauce.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM52.JPEG",
+            "ranking": 66,
+            "price": 12.49,
+            "calorie": null
+        },
+        "148378": {
+            "id": 148378,
+            "name": "Side of Rice",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM27.JPEG",
+            "ranking": 28,
+            "price": 2.99,
+            "calorie": 280
+        },
+        "148379": {
+            "id": 148379,
+            "name": "Pellegrino Lemon",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM38.JPEG",
+            "ranking": 131,
+            "price": 3.49,
+            "calorie": null
+        },
+        "148381": {
+            "id": 148381,
+            "name": "Flatcut Chicken Kabob",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023061403PM08.JPEG",
+            "ranking": 59,
+            "price": 11.99,
+            "calorie": 210
+        },
+        "148382": {
+            "id": 148382,
+            "name": "Luna Vida Classic Bowl",
+            "description": "Grilled sustainable salmon served on top of a bed of lettuce with lemon vinaigrette, Greek cabbage, chickpea salad, cucumber, tomato, and feta drizzled with housemade tzatziki.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM51.JPEG",
+            "ranking": 26,
+            "price": 12.99,
+            "calorie": null
+        },
+        "148383": {
+            "id": 148383,
+            "name": "Loaded Fries",
+            "description": "Seasoned fries, spicy feta, diced tomato, pickled red onions, oregano, garlic feta sauce",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM36.JPEG",
+            "ranking": 43,
+            "price": 8.79,
+            "calorie": 840
+        },
+        "148388": {
+            "id": 148388,
+            "name": "Falafel Plate",
+            "description": "Five rounds of handcrafted falafel. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023021012AM50.JPEG",
+            "ranking": 53,
+            "price": 15.79,
+            "calorie": 920
+        },
+        "148389": {
+            "id": 148389,
+            "name": "Chicken Kabob",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM44.JPEG",
+            "ranking": 33,
+            "price": 9.99,
+            "calorie": 206
+        },
+        "148390": {
+            "id": 148390,
+            "name": "Kids Apple Juice",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM40.PNG",
+            "ranking": 93,
+            "price": 1.99,
+            "calorie": null
+        },
+        "148391": {
+            "id": 148391,
+            "name": "Bistro Beef Kabob",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023053007PM42.JPEG",
+            "ranking": 86,
+            "price": 13.99,
+            "calorie": 378
+        },
+        "148392": {
+            "id": 148392,
+            "name": "Side of Multigrain Lavash",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM28.JPEG",
+            "ranking": 96,
+            "price": 1.69,
+            "calorie": 231
+        },
+        "148393": {
+            "id": 148393,
+            "name": "Veggie Kabob Plate",
+            "description": "Grilled marinated button mushrooms, yellow squash, onion and bell pepper. Served with a side of spicy or original hummus. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023071204PM28.JPEG",
+            "ranking": 84,
+            "price": 14.99,
+            "calorie": null
+        },
+        "148395": {
+            "id": 148395,
+            "name": "Koobideh Kabob",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM45.JPEG",
+            "ranking": 80,
+            "price": 11.49,
+            "calorie": null
+        },
+        "148396": {
+            "id": 148396,
+            "name": "Coca-Cola Fountain Drink",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023040405PM39.JPEG",
+            "ranking": 52,
+            "price": 2.99,
+            "calorie": null
+        },
+        "148397": {
+            "id": 148397,
+            "name": "Modern Greek Salad",
+            "description": "Lettuce medley, feta cheese, Greek olives, sliced pepperoncini, tomato, cucumber, housemade pickled onions, crispy chickpeas, house vinaigrette (370 Cals). Pita bread (+110 Cals). Add on chilled chopped chicken (+130 Cals), gyro (+350 Cals), or falafel (+250 Cals)",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023013109AM19.JPEG",
+            "ranking": 14,
+            "price": 12.29,
+            "calorie": 370
+        },
+        "148399": {
+            "id": 148399,
+            "name": "Veggie Kabob",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM46.JPEG",
+            "ranking": 79,
+            "price": 9.49,
+            "calorie": null
+        },
+        "148400": {
+            "id": 148400,
+            "name": "Watermelon Hint",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM37.JPEG",
+            "ranking": 117,
+            "price": 3.49,
+            "calorie": null
+        },
+        "148404": {
+            "id": 148404,
+            "name": "Gyro Meat",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM42.JPEG",
+            "ranking": 78,
+            "price": 10.99,
+            "calorie": null
+        },
+        "148405": {
+            "id": 148405,
+            "name": "Gyro Pita",
+            "description": "Greek cabbage salad, shredded kale, diced tomato, sauce, gyro meat wrapped in pita and served with choice of side. Choice of house salad (+85 cals) or fries (+420 cals).",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM37.JPEG",
+            "ranking": 10,
+            "price": 12.99,
+            "calorie": 710
+        },
+        "148409": {
+            "id": 148409,
+            "name": "Salmon A La Carte",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM43.JPEG",
+            "ranking": 75,
+            "price": 13.99,
+            "calorie": null
+        },
+        "148410": {
+            "id": 148410,
+            "name": "Salted Caramel Cookie",
+            "description": "All-natural toffee and milky white chocolate chunks mixed with crisp pretzel bites and sea salt. Free from GMOs, additives, and artificial colors. Made with pure cane sugar and cage-free eggs.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020810PM36.JPEG",
+            "ranking": 72,
+            "price": 3.49,
+            "calorie": 390
+        },
+        "148413": {
+            "id": 148413,
+            "name": "Coke Can",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM35.JPEG",
+            "ranking": 51,
+            "price": 2.99,
+            "calorie": null
+        },
+        "148414": {
+            "id": 148414,
+            "name": "Santorini Bowl",
+            "description": "Pearled couscous, tzatziki, hummus, kale medley, pickled onions, schug, olives, basmati rice, and choice of protein.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023040405PM41.JPEG",
+            "ranking": 3,
+            "price": 12.99,
+            "calorie": null
+        },
+        "148415": {
+            "id": 148415,
+            "name": "Diet Coke Can",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM43.JPEG",
+            "ranking": 62,
+            "price": 2.99,
+            "calorie": null
+        },
+        "148416": {
+            "id": 148416,
+            "name": "Pellegrino Natural",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020903AM30.JPEG",
+            "ranking": null,
+            "price": 3.49,
+            "calorie": null
+        },
+        "148418": {
+            "id": 148418,
+            "name": "Side Modern Greek Salad",
+            "description": "Lettuce medley, feta cheese, Greek olives, sliced pepperoncini, tomato, cucumber, house pickled red onions, crunchy chickpeas, house vinaigrette.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023053008PM52.JPEG",
+            "ranking": 94,
+            "price": 4.99,
+            "calorie": 180
+        },
+        "148419": {
+            "id": 148419,
+            "name": "Side House Salad",
+            "description": "Lettuce medley, tomato and cucumber. Served with house vinaigrette on side",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023053009PM01.JPEG",
+            "ranking": 89,
+            "price": 3.99,
+            "calorie": 110
+        },
+        "148421": {
+            "id": 148421,
+            "name": "Chocolate Fudge Brownie",
+            "description": "Rich and fudgy, certified gluten-free brownie. Baked with only cage-free eggs, gluten-free flour, sustainable chocolates and ingredients free from GMOs and artificial additives.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023013109AM17.JPEG",
+            "ranking": 87,
+            "price": 3.49,
+            "calorie": 350
+        },
+        "148422": {
+            "id": 148422,
+            "name": "Chicken Kabob Plate",
+            "description": "Succulent pieces of boneless chicken tenders. Plates include: Basmati rice, pita bread, tzatziki, and choice of house salad, Greek cabbage, original hummus, or spicy harissa hummus +$1",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023052409PM37.JPEG",
+            "ranking": 1,
+            "price": 15.79,
+            "calorie": 619
+        },
+        "148423": {
+            "id": 148423,
+            "name": "Sprite Can",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-2023020902AM34.JPEG",
+            "ranking": 81,
+            "price": 2.99,
+            "calorie": null
+        },
+        "148411": {
+            "id": 148411,
+            "name": "Tzatziki",
+            "description": "Choice of veggies or pita bread.",
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-96a9654f-3726-473b-aa2d-423844ca1411.PNG",
+            "ranking": 61,
+            "price": 5.79,
+            "calorie": null
+        },
+        "233566": {
+            "id": 233566,
+            "name": "Iced Tea & Lemonade",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "temp/1-de4df6e1-47f8-4a76-9e4b-56482a4f791e.JPEG",
+            "ranking": null,
+            "price": 2.99,
+            "calorie": null
+        },
+        "233798": {
+            "id": 233798,
+            "name": "Lemon Garlic Chicken Kabob",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "menu/restaurant-group2/menu-item/300990-54d15aab-aea9-4c78-afd6-baf62bf44c83",
+            "ranking": null,
+            "price": 9.99,
+            "calorie": null
+        },
+        "233797": {
+            "id": 233797,
+            "name": "Lemon Garlic Chicken Pita",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "menu/restaurant-group2/menu-item/301341-50da72eb-cb3a-437f-85ac-8b8060e00bcb",
+            "ranking": null,
+            "price": 12.99,
+            "calorie": null
+        },
+        "233799": {
+            "id": 233799,
+            "name": "Lemon Garlic Chicken Kabob Plate",
+            "description": null,
+            "stock_status": "IN_STOCK",
+            "restaurant_id": null,
+            "image": "menu/restaurant-group2/menu-item/300988-152effe2-54c9-4d3f-8573-b57036cee5cc",
+            "ranking": null,
+            "price": 15.79,
+            "calorie": null
+        }
+    },
+    "menu_group_menu_item_lookup": {
+        "21565": [
+            148158,
+            148378,
+            148183,
+            148361,
+            148360,
+            148418,
+            148419,
+            148375,
+            148392,
+            148376,
+            148383
+        ],
+        "21566": [
+            148185,
+            148144,
+            148372,
+            148145,
+            148149,
+            148160,
+            148150,
+            148383,
+            148157,
+            148411
+        ],
+        "21569": [
+            233799,
+            148422,
+            148143,
+            148393,
+            148148,
+            148147,
+            148155,
+            148156,
+            148388,
+            148153,
+            148142
+        ],
+        "21570": [
+            233798,
+            148389,
+            148404,
+            148395,
+            148381,
+            148391,
+            148409,
+            148399
+        ],
+        "21572": [
+            148414,
+            148382,
+            148373,
+            148368,
+            148377
+        ],
+        "21573": [
+            233799
+        ],
+        "21574": [
+            233797,
+            148367,
+            148181,
+            148364,
+            148405
+        ],
+        "21575": [
+            148180,
+            148410,
+            148365,
+            148421
+        ],
+        "33596": [
+            148152,
+            148159,
+            148397,
+            148151
+        ],
+        "34486": [
+            148396,
+            233566,
+            148413,
+            148415,
+            148423,
+            148374,
+            148400,
+            148390,
+            148362,
+            148379,
+            148416
+        ]
+    }
+}
