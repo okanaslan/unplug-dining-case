@@ -1,12 +1,9 @@
 from flask import request, jsonify
-from server import app
 from database import db
 from models.menu_item import MenuItem
 
 
-# POST Endpoint: /menu-item/{menu_item_id}
-@app.route("/menu-item/<int:menu_item_id>", methods=["POST"])
-def update_menu_item(menu_item_id):
+def update_menu_item_handler(menu_item_id):
     # Get the request body data
     data = request.get_json()
 
@@ -27,4 +24,3 @@ def update_menu_item(menu_item_id):
 
     # Return a 200 response with the updated menu item
     return jsonify(menu_item.serialize()), 200
-    

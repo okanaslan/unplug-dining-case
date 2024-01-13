@@ -1,13 +1,10 @@
 from flask import jsonify
-from server import app
 from models.menu import Menu
 
 
-# GET Endpoint: /menu/{restaurant_id}
-@app.route("/menu/<int:restaurant_id>")
-def get_menu(restaurant_id):
+def get_menu_handler(restaurant_id):
     # Get the menu from the database
-    menu = Menu.query.filter_by(restaurant_id=restaurant_id).first()
+    menu = Menu.query.filter_by(id=restaurant_id).first()
 
     # If the menu doesn't exist, return a 404 error
     if not menu:

@@ -1,14 +1,24 @@
 import datetime
 from database import db
 
+
 class MenuItem(db.Model):
     __tablename__ = "menu_items"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.VARCHAR(50), nullable=False)
     description = db.Column(db.VARCHAR(50), nullable=False)
+    stock_status = db.Column(db.VARCHAR(50), nullable=False)
+    restaurant_id = db.Column(db.Integer, nullable=False)
+    image = db.Column(db.VARCHAR(50), nullable=False)
+    ranking = db.Column(db.Integer, nullable=False)
     price = db.Column(db.Float, nullable=False)
-    created_at = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
-    updated_at = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
+    calorie = db.Column(db.Integer, nullable=False)
+    created_at = db.Column(
+        db.DateTime, nullable=False, default=datetime.datetime.utcnow
+    )
+    updated_at = db.Column(
+        db.DateTime, nullable=False, default=datetime.datetime.utcnow
+    )
 
     def __init__(self, name, description, price):
         self.name = name
