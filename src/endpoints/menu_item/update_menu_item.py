@@ -4,23 +4,27 @@ from models.menu_item import MenuItem
 
 
 def update_menu_item_handler(menu_item_id):
-    # Get the request body data
     data = request.get_json()
 
-    # Get the menu item from the database
     menu_item = MenuItem.query.filter_by(id=menu_item_id).first()
-
-    # If the menu item doesn't exist, return a 404 error
     if not menu_item:
         return jsonify({"error": "Menu item not found"}), 404
 
-    # Update the menu item
-    menu_item.name = data["name"]
-    menu_item.description = data["description"]
-    menu_item.price = data["price"]
+    if "name" in data:
+        menu_item.name = data["name"]
+    if "stock_status" in data:
+        menu_item.stock_status = data["stock_status"]
+    if "image" in data:
+        menu_item.image = data["image"]
+    if "price" in data:
+        menu_item.price = data["price"]
+    if "description" in data:
+        menu_item.description = data["description"]
+    if "ranking" in data:
+        menu_item.ranking = data["ranking"]
+    if "calorie" in data:
+        menu_item.calorie = data["calorie"]
 
-    # Commit the changes to the database
     db.session.commit()
 
-    # Return a 200 response with the updated menu item
     return jsonify(menu_item.serialize()), 200

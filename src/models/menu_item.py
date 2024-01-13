@@ -22,7 +22,6 @@ class MenuItem(db.Model):
     menu_id = db.Column(db.Integer, db.ForeignKey("menu.id"), nullable=True)
     menu: Mapped["Menu"] = db.relationship(back_populates="menu_items")
 
-
     def __init__(
         self,
         id,
@@ -54,6 +53,10 @@ class MenuItem(db.Model):
             "name": self.name,
             "description": self.description,
             "price": self.price,
+            "stock_status": self.stock_status,
+            "image": self.image,
+            "ranking": self.ranking,
+            "calorie": self.calorie,
         }
 
     def save(self):

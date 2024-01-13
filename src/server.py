@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 
-from endpoints.menu.create_menu import create_menu_handler
+from endpoints.menu.update_menu import update_menu_handler
 from endpoints.menu.get_menu import get_menu_handler
 from endpoints.menu_item.update_menu_item import update_menu_item_handler
 
@@ -15,8 +15,8 @@ server.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 # register endpoints
 @server.route("/menu/<int:id>", methods=["POST"])
-def create_menu(id):
-    return create_menu_handler(id)
+def update_menu(id):
+    return update_menu_handler(id)
 
 
 @server.route("/menu/<int:id>")

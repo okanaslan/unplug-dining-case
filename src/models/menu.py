@@ -2,6 +2,7 @@ import datetime
 from database import db
 from sqlalchemy.orm import Mapped
 from typing import List
+from models.menu_item import MenuItem
 
 
 class Menu(db.Model):
@@ -14,7 +15,9 @@ class Menu(db.Model):
     updated_at = db.Column(
         db.DateTime, nullable=False, default=datetime.datetime.utcnow
     )
-    menu_items: Mapped[List["MenuItem"]] = db.relationship(back_populates="menu", lazy=True)
+    menu_items: Mapped[List["MenuItem"]] = db.relationship(
+        back_populates="menu", lazy=True
+    )
 
     def __init__(self, id, name):
         self.id = id
@@ -25,7 +28,27 @@ class Menu(db.Model):
         return "<Menu %r>" % self.id
 
     def serialize(self):
-        return {"id": self.id, "name": self.name, "menu_items": [menu_item.serialize() for menu_item in self.menu_items]}
+        return {
+            "id": self.id,
+            "name": self.name,
+            "menu_items": [menu_item.serialize() for menu_item in self.menu_items],
+        }
+
+    def add_menu_item(self, menu_item_id):
+        menu_item = MenuItem.query.filter_by(id=menu_item_id).first()
+        if not menu_item:
+            return None
+        self.menu_items.append(menu_item)
+        db.session.commit()
+
+    def remove_menu_item(self, menu_item_id):
+        menu_item = MenuItem.query.filter_by(id=menu_item_id).first()
+        if not menu_item:
+            return None
+        if menu_item not in self.menu_items:
+            return None
+        self.menu_items.remove(menu_item)
+        db.session.commit()
 
     def save(self):
         db.session.add(self)
