@@ -1,5 +1,6 @@
 from server import server
 from database import db
+from scripts.load_initial_data import loadInitialData
 
 if __name__ == "__main__":
     db.init_app(server)
@@ -9,6 +10,7 @@ if __name__ == "__main__":
         db.session.commit()
         db.session.close()
         print("Database Created")
-        # loadInitialData()
-        
+
+        loadInitialData()
+
     server.run(debug=True)

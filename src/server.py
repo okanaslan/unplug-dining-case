@@ -23,6 +23,7 @@ def create_menu(restaurant_id):
 def get_menu(restaurant_id):
     return get_menu_handler(restaurant_id)
 
+
 @server.route("/menu-item/<int:menu_item_id>", methods=["POST"])
 def update_menu_item(menu_item_id):
     return update_menu_item_handler(menu_item_id)
