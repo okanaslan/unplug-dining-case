@@ -1,8 +1,8 @@
 import datetime
-from database import db
-from sqlalchemy.orm import Mapped
 from typing import List
-from models.menu_item import MenuItem
+from sqlalchemy.orm import Mapped
+from src.database import db
+from src.models.menu_item import MenuItem
 
 
 class Menu(db.Model):

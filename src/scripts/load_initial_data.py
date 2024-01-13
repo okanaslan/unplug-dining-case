@@ -1,6 +1,6 @@
 import json
-from models.menu import Menu
-from models.menu_item import MenuItem
+from src.models.menu import Menu
+from src.models.menu_item import MenuItem
 
 
 def loadInitialData():

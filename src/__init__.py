@@ -1,6 +1,6 @@
-from server import server
-from database import db
-from scripts.load_initial_data import loadInitialData
+from src.server import server
+from src.database import db
+from src.scripts.load_initial_data import loadInitialData
 
 if __name__ == "__main__":
     db.init_app(server)

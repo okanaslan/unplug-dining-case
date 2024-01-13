@@ -1,6 +1,6 @@
 import datetime
-from database import db
 from sqlalchemy.orm import Mapped
+from src.database import db
 
 
 class MenuItem(db.Model):

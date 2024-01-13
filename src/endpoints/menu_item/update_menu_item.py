@@ -1,14 +1,12 @@
-from flask import request, jsonify
-from database import db
-from models.menu_item import MenuItem
+from src.database import db
+from src.models.menu_item import MenuItem
 
 
-def update_menu_item_handler(menu_item_id):
-    data = request.get_json()
+def update_menu_item(menu_item_id, data):
 
     menu_item = MenuItem.query.filter_by(id=menu_item_id).first()
     if not menu_item:
-        return jsonify({"error": "Menu item not found"}), 404
+        return None
 
     if "name" in data:
         menu_item.name = data["name"]
@@ -27,4 +25,4 @@ def update_menu_item_handler(menu_item_id):
 
     db.session.commit()
 
-    return jsonify(menu_item.serialize()), 200
+    return menu_item.serialize()
