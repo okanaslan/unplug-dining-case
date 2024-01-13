@@ -1,12 +1,13 @@
 from flask import jsonify
 from models.menu import Menu
+from sqlalchemy.orm import joinedload
 
 
-def get_menu_handler(restaurant_id):
-    # Get the menu from the database
-    menu = Menu.query.filter_by(id=restaurant_id).first()
+def get_menu_handler(id):
+    # get menu and join menu_items
+    menu = Menu.query.filter_by(id=id).options(joinedload(Menu.menu_items)).first()
 
-    # If the menu doesn't exist, return a 404 error
+
     if not menu:
         return jsonify({"error": "Menu not found"}), 404
 

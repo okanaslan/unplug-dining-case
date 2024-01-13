@@ -1,5 +1,6 @@
 import datetime
 from database import db
+from sqlalchemy.orm import Mapped
 
 
 class MenuItem(db.Model):
@@ -8,7 +9,6 @@ class MenuItem(db.Model):
     name = db.Column(db.VARCHAR(255), nullable=False)
     description = db.Column(db.VARCHAR(2550), nullable=True)
     stock_status = db.Column(db.VARCHAR(255), nullable=False)
-    restaurant_id = db.Column(db.Integer, nullable=True)
     image = db.Column(db.VARCHAR(255), nullable=False)
     ranking = db.Column(db.Integer, nullable=True)
     price = db.Column(db.Float, nullable=False)
@@ -20,6 +20,8 @@ class MenuItem(db.Model):
         db.DateTime, nullable=False, default=datetime.datetime.utcnow
     )
     menu_id = db.Column(db.Integer, db.ForeignKey("menu.id"), nullable=True)
+    menu: Mapped["Menu"] = db.relationship(back_populates="menu_items")
+
 
     def __init__(
         self,
@@ -31,17 +33,17 @@ class MenuItem(db.Model):
         description=None,
         ranking=None,
         calorie=None,
-        restaurant_id=None,
+        menu_id=None,
     ):
         self.id = id
         self.name = name
         self.description = description
         self.stock_status = stock_status
-        self.restaurant_id = restaurant_id
         self.image = image
         self.ranking = ranking
         self.price = price
         self.calorie = calorie
+        self.menu_id = menu_id
 
     def __repr__(self):
         return "<MenuItem %r>" % self.name

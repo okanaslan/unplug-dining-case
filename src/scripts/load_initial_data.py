@@ -11,7 +11,7 @@ def loadInitialData():
 
     for menuId in menuList:
         menu = menuList[menuId]
-        isExisting = Menu.query.filter_by(restaurant_id=int(menu["id"])).first()
+        isExisting = Menu.query.filter_by(id=int(menu["id"])).first()
         if isExisting:
             continue
         menuObj = Menu(int(menu["id"]), menu["name"])
@@ -37,7 +37,7 @@ def loadInitialData():
 
     for menuId in menu_group_menu_item_lookup:
         menuItemIds = menu_group_menu_item_lookup[menuId]
-        menu = Menu.query.filter_by(restaurant_id=int(menuId)).first()
+        menu = Menu.query.filter_by(id=int(menuId)).first()
         if not menu:
             continue
         for menuItemId in menuItemIds:
