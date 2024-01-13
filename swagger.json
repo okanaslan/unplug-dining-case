@@ -1,0 +1,175 @@
+{
+    "openapi": "3.1.0",
+    "info": { "title": "Unplug Dining API", "description": "Unplug Dining case study API", "version": "1.0.0" },
+    "servers": [
+        { "url": "http://localhost:{port}", "description": "Local", "variables": { "port": { "default": "5000" } } }
+    ],
+    "paths": {
+        "/menu/{menu_id}": {
+            "get": {
+                "operationId": "getMenu",
+                "tags": ["menu"],
+                "parameters": [{ "in": "path", "name": "menu_id", "required": true }],
+                "responses": {
+                    "default": {
+                        "description": "Success Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": { "type": "number" },
+                                        "menu_items": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": { "type": "number" },
+                                                    "name": { "type": "string" },
+                                                    "description": { "type": "string" },
+                                                    "stock_status": { "type": "string" },
+                                                    "price": { "type": "number" },
+                                                    "ranking": { "type": "number" },
+                                                    "calorie": { "type": "number" },
+                                                    "image": { "type": "string" }
+                                                },
+                                                "required": [
+                                                    "stock_status",
+                                                    "id",
+                                                    "image",
+                                                    "name",
+                                                    "price"
+                                                ]
+                                            }
+                                        },
+                                        "name": { "type": "string" }
+                                    },
+                                    "required": ["id", "menu_items", "name"],
+                                    "additionalProperties": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "operationId": "updateMenu",
+                "tags": ["menu"],
+                "parameters": [{ "in": "path", "name": "menu_id", "required": true }],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "operation": { "type": "string" },
+                                    "menuItemId": { "type": "number" }
+                                },
+                                "required": ["operation", "menuItemId"],
+                                "additionalProperties": false
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Success Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": { "type": "number" },
+                                        "menu_items": {
+                                            "type": "array",
+                                            "items": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "id": { "type": "number" },
+                                                    "name": { "type": "string" },
+                                                    "description": { "type": "string" },
+                                                    "stock_status": { "type": "string" },
+                                                    "price": { "type": "number" },
+                                                    "ranking": { "type": "number" },
+                                                    "calorie": { "type": "number" },
+                                                    "image": { "type": "string" }
+                                                },
+                                                "required": [
+                                                    "stock_status",
+                                                    "id",
+                                                    "image",
+                                                    "name",
+                                                    "price"
+                                                ]
+                                            }
+                                        },
+                                        "name": { "type": "string" }
+                                    },
+                                    "required": ["id", "menu_items", "name"],
+                                    "additionalProperties": false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/menu-item/{menu_item_id}": {
+            "post": {
+                "operationId": "updateMenuItem",
+                "tags": ["menu-item"],
+                "parameters": [{ "in": "path", "name": "menu_item_id", "required": true }],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": { "type": "string" },
+                                    "description": { "type": "string" },
+                                    "stock_status": { "type": "string" },
+                                    "price": { "type": "number" },
+                                    "ranking": { "type": "number" },
+                                    "calorie": { "type": "number" },
+                                    "image": { "type": "string" }
+                                },
+                                "required": [],
+                                "additionalProperties": false
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "default": {
+                        "description": "Success Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "id": { "type": "number" },
+                                        "name": { "type": "string" },
+                                        "description": { "type": "string" },
+                                        "stock_status": { "type": "string" },
+                                        "price": { "type": "number" },
+                                        "ranking": { "type": "number" },
+                                        "calorie": { "type": "number" },
+                                        "image": { "type": "string" }
+                                    },
+                                    "required": [
+                                        "stock_status",
+                                        "id",
+                                        "image",
+                                        "name",
+                                        "price"
+                                    ],
+                                    "additionalProperties": false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

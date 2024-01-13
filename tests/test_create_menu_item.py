@@ -1,6 +1,5 @@
-def inc(x):
-    return x + 1
+from src.endpoints.menu.get_menu import get_menu_handler
 
 
 def test_answer():
-    assert inc(4) == 5
+    assert get_menu_handler(4) == 5
