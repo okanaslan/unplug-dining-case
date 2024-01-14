@@ -5,7 +5,7 @@ from src.models.menu_item import MenuItem
 
 def test_menu_item_updated():
     with server.app_context():
-        menuItem = MenuItem(1, "test menu item", "IN_STOCK", "test image", 0, "test description", 0)
+        menuItem = MenuItem(3, "test menu item", "IN_STOCK", "test image", 0, "test description", 0)
         db.session.add(menuItem)
 
         data = {

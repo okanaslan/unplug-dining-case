@@ -41,4 +41,4 @@ def update_menu_item_handler(id):
     if not menu_item:
         return jsonify({"error": "Menu item not found"}), 404
     
-    return update_menu_item(id)
+    return jsonify(menu_item), 200

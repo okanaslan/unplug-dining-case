@@ -18,4 +18,4 @@ def update_menu(id, data):
     else:
         return None, 400
 
-    return menu.serialize()
+    return menu.serialize(), 201

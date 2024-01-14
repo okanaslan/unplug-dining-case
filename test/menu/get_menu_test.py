@@ -15,6 +15,7 @@ def test_menu_found():
         assert result["menu_items"] == []
 
         db.session.delete(menu)
+        db.session.commit()
 
 
 def test_menu_not_found():

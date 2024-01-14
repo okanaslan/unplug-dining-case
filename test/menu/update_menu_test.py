@@ -17,7 +17,8 @@ def test_menu_updated():
             "operation": "add",
             "menuItemId": menuItem.id
         }
-        result = update_menu(1, data)
+        result, status_code = update_menu(1, data)
+        assert status_code == 201
         assert result["id"] == menu.id
         assert result["menu_items"][0]["id"] == menuItem.id
 
