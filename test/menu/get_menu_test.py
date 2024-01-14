@@ -3,6 +3,7 @@ from src.server import server
 from src.endpoints.menu.get_menu import get_menu
 from src.models.menu import Menu
 
+
 def test_menu_found():
     db.init_app(server)
     with server.app_context():

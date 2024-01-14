@@ -19,10 +19,10 @@ class Menu(db.Model):
         back_populates="menu", lazy=True
     )
 
-    def __init__(self, id, name):
+    def __init__(self, id, name, menu_items=[]):
         self.id = id
         self.name = name
-        self.menu_items = []
+        self.menu_items = menu_items
 
     def __repr__(self):
         return "<Menu %r>" % self.id

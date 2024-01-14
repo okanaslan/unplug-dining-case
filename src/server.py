@@ -19,7 +19,7 @@ def get_menu_handler(id):
     menu = get_menu(id)
     if not menu:
         return jsonify({"error": "Menu not found"}), 404
-        
+
     return jsonify(menu), 200
 
 
@@ -29,7 +29,7 @@ def update_menu_handler(id):
     menu, status_code = update_menu(id, data)
     if not menu:
         return jsonify({"error": "Menu not found"}), status_code
-    
+
     return jsonify(menu), 200
 
 
@@ -40,5 +40,5 @@ def update_menu_item_handler(id):
     menu_item = update_menu_item(id, data)
     if not menu_item:
         return jsonify({"error": "Menu item not found"}), 404
-    
+
     return jsonify(menu_item), 200

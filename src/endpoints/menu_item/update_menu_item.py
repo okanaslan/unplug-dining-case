@@ -3,7 +3,6 @@ from src.models.menu_item import MenuItem
 
 
 def update_menu_item(menu_item_id, data):
-
     menu_item = MenuItem.query.filter_by(id=menu_item_id).first()
     if not menu_item:
         return None
